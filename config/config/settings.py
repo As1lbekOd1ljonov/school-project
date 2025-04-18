@@ -156,14 +156,8 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.UserRateThrottle'
     ],
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '5/min',
-        'user': '10/min',
-        'category_anon': '3/min',
-        'category_user': '5/min',
-        'product_anon': '3/min',
-        'product_user': '5/min',
-        'order_anon': '3/min',
-        'order_user': '5/min'
+        'user': '100/day',
+        'anon': '10/min'
     },
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 2
